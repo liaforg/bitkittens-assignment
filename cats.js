@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
   runSummonKitties = document.addEventListener('click', function(event){
     console.log('click');
 
+    $.ajax({
+      url: 'http://bitkittens.herokuapp.com/cats.json',
+      method: 'GET',
+      dataType: 'json'
+    })
+
   })
 
 
